@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alumni Connect - Members</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #f6f6f6, #d6eaf8);
+        }
+
+        header {
+            background-color: #004d66;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #004d66;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .member-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: scale(1.05);
+        }
+
+        .member-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .member-name {
+            font-weight: bold;
+            color: #003344;
+            margin-bottom: 5px;
+        }
+
+        .member-role {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Alumni Connect</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="members.html">Members</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Our Members</h2>
+        <div class="members-grid">
+            <div class="member-card">
+                <img class="member-img" src="download.jpg" alt="Member 1">
+                <div class="member-name">Ravi Kumar</div>
+                <div class="member-role">Software Engineer, TCS</div>
+            </div>
+
+            <div class="member-card">
+                <img class="member-img" src="download.jpg" alt="Member 2">
+                <div class="member-name">Anjali Sharma</div>
+                <div class="member-role">Data Analyst, Accenture</div>
+            </div>
+
+            <div class="member-card">
+                <img class="member-img" src="download.jpg" alt="Member 3">
+                <div class="member-name">Nikhil Reddy</div>
+                <div class="member-role">DevOps Engineer, Infosys</div>
+            </div>
+
+            <div class="member-card">
+                <img class="member-img" src="download.jpg" alt="Member 4">
+                <div class="member-name">Swathi Menon</div>
+                <div class="member-role">Product Manager, Zoho</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
